@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* body{
+            margin: 0;
+        } */
+
+        table, th, td {
+          border: 2px solid black;
+          border-collapse: collapse;
+        }
+
+        table{
+            width: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <table>
+         <tr>
+             <th colspan="4">assignment 4</th>
+         </tr>
+         <tr>
+             <td rowspan="3">student</td>
+             <td> name </td>
+             <td> hashem </td>
+             <td rowspan="3">
+                 <a href="">www.zu.edu.jo</a>
+                 <br><br>
+                 <img src="./image/OIP.jpg" width="150px" alt="">
+             </td>
+         </tr>
+         <tr>
+             <td>E-mail</td>
+             <td><a href="">H@zu.edu.jo</a></td>
+         </tr>
+         <tr>
+            <td>ID</td>
+            <td>20201212</td>
+        </tr>
+        <tr>
+            <td>course</td>
+            <td colspan="3">
+                <ol>
+                    <li>
+                        Programming languages:
+                        <ol>
+                            <li>C#</li>
+                            <li>java</li>
+                            <li>python</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Math:
+                        <ul type="circle">
+                            <li>calculas 1</li>
+                            <li>linear algebra</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+     </table>
+     <h1>create new e-mail</h1>
+     <p>
+         this form is to create a new e-mail at zarqa university.
+     </p>
+     <form action="">
+         <label for="first">first name</label>
+         <input id="first" type="text">
+         <br><br>
+         <label for="last">last name</label>
+         <input id="last" type="text">
+         <br><br>
+         <label for="user">user name</label>
+         <input id="user" type="email" placeholder="name@zu.edu.jo">
+         <label for="user">(name@domain.com)</label>
+         <br><br>
+         <label for="password">password</label>
+         <input id="password" type="password">
+         <label for="password">(you must enter password)</label>
+         <br><br>
+         <label for="Birt">BirthDate</label>
+         <input id="Birt" type="text">
+         <label for="Birt">(yyyy/mm-dd)</label>
+         <br><br>
+         <label for="phone">phone number</label>
+         <input id="phone" type="text">
+         <label for="phone">((###) ###-####)</label>
+         <br><br>
+         <label for="gender">gender </label>
+         <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Fmale">Fmale</option>
+         </select>
+         <br><br>
+         <input type="submit">
+         <input type="reset">
+
+     </form>
+</body>
+</html>
