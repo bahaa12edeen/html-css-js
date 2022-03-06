@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .d1{
+            padding: 50px;
+            background-color: blueviolet;
+            width: 0cm;
+            transition: ease-in-out 1s;
+        }
+
+        .d1:hover{
+            
+            width: 300px;
+        }
+
+        .d2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+
+        }
+
+        .d2:hover{
+            animation-name: example;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;                
+        } 
+
+        @keyframes example {
+            0%   {}
+            25%  {}
+            50%  { height: 400px;}
+            75%  {}
+            100% { width: 400px; height: 400px;}
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>the transition properity</h1>
+    <p>hover over the div element below, to see the transition effect</p>
+    <div class="d1"></div>
+    <hr>
+    <div class="d2"></div>
+</body>
+</html>
