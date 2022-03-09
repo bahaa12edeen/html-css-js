@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 5px;
+            max-height: 100vh;
+            font-size: 0;
+            text-align: center;
+        }
+
+        .grid-container{
+            text-align: center;
+            display: grid;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            row-gap: 4px;
+            column-gap: 4px;
+            grid-template-columns: repeat(3, calc((100% - 8px - 0px)/3));
+            grid-template-rows: repeat(3, calc(((100vh - 8px - 10px)/3) ));
+            margin: 5px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div><img height="100%" width="100%" src="./image/OIP1.jpg" alt=""></div>
+        <div><img height="100%" width="100%" src="./image/OIP4.jpg" alt=""></div>
+        <div><img height="100%" width="100%" src="./image/images.jpg" alt=""></div>
+        <div><img height="100%" width="100%" src="./image/images2.jpg" alt=""></div>
+        <div><img height="100%" width="100%" src="./image/images3.jpg" alt=""></div>
+        <div><img height="100%" width="100%" src="./image/image2s.jpg" alt=""></div>
+        <div><img height="100%" width="100%" src="./image/download.jpg" alt=""></div>
+        <div><img height="100%" width="100%" src="./image/download1.jpg" alt=""></div>
+        <!-- <div><img height="100%" width="100%" src="./image/image2s.jpg" alt=""></div> -->
+    </div>
+</body>
+</html>

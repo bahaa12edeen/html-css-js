@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        body{
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .flex-parent{
+            border: 5px solid gold;
+            height: 100vh;
+            display: flex;
+        }
+
+        .flex-parent div:nth-child(odd){
+            text-align: center;
+            padding: 10px;
+            background-color: tomato;
+            font-size: 60px;
+            flex-grow: 1;
+            /* flex-direction: row; */
+        }
+
+        .flex-parent div:nth-child(even){
+            text-align: center;
+            padding: 10px;
+            background-color: teal;
+            font-size: 60px;
+            flex-grow: 1;
+            /* flex-direction: row; */
+        }        
+        </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>

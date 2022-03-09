@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 5px;
+            /* max-height: 100vh; */
+            /* font-size: 0; */
+            text-align: center;
+        }
+
+        .container-grid{
+            text-align: center;
+            display: grid;
+            /* position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0; */
+            row-gap: 4px;
+            column-gap: 20px;
+            grid-template-columns: repeat(4, 300px);
+            grid-template-rows: repeat(4, auto);
+            margin: 10px;
+        }
+
+        .container-grid div:first-child{
+            grid-column-start: 1;
+        }
+
+        .container-grid div:nth-child(2){
+            grid-column-start: 2;
+        }
+
+        .container-grid div:nth-child(3){
+            grid-column-start: 3;
+            gap: 50px;
+        }
+
+        .container-grid div:nth-child(4){
+            grid-row-start: 2;
+            grid-column-start: 3;
+        }
+
+        .container-grid div:nth-child(5){
+            grid-row-start: 3;
+            grid-column-start: 2;
+        }
+
+        .container-grid div:nth-child(6){
+            grid-row-start: 3;
+            grid-column-start: 4;
+        }
+
+        .container-grid div:nth-child(7){
+            grid-row-start: 4;
+            grid-column-start: 4;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-grid">
+        <div>
+            <img src="./image/05.jpg" height="100%" width="100%" alt="">
+        </div>
+        <div>
+            <img src="./image/01.jpg" height="100%" width="100%" alt="">
+        </div>
+        <div>
+            <img src="./image/04.jpg" height="100%" width="100%" alt="">
+        </div>
+        <div>
+            <p style="background-color: rgb(212, 67, 67);">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium totam tempore eveniet nostrum facere eos aliquam sapiente vero neque, libero, omnis, quam reiciendis. Incidunt perspiciatis at repellat maxime necessitatibus harum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, molestias. Natus blanditiis commodi quas quaerat quia officiis maiores ad hic? Cupiditate nisi quaerat vero corrupti velit rem quod fugit facere. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab maxime porro corrupti praesentium dicta. Quod suscipit eveniet quasi ullam repellat recusandae sed omnis animi, necessitatibus adipisci, sit autem corrupti porro.
+            </p>
+        </div>
+        <div>
+            <img src="./image/02.jpg" height="100%" width="100%" alt="">
+        </div>
+        <div style="background-color: rgb(67, 81, 212);">
+             Lorem ipsum dolor sit amet, quae sint, libero magni et vero aliquid? Hic, ratione. Quisquam excepturi ex aperiam unde odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quaerat voluptates dolor ad perspiciatis laborum natus totam sequi mollitia repellendus aspernatur magnam qui ut, earum debitis. Delectus amet quaerat mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate magni minus cumque accusamus, earum consectetur. Laborum perferendis repellendus a eum pariatur aspernatur labore, fugit ut suscipit deserunt impedit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deleniti quas blanditiis quod unde laudantium itaque temporibus dicta quia cum. Quidem laboriosam distinctio nesciunt quaerat enim facere veritatis non beatae!
+        </div>
+        <div>
+            <img src="./image/03.jpg" height="100%" width="100%" alt="">
+        </div>
+    </div>
+    <!-- <span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laborum consectetur dolore vel earum animi distinctio quae tempore id quidem. Iure veritatis cum dignissimos vitae! Eveniet ut illum nihil qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorem quaerat porro assumenda delectus error neque a totam quam odio impedit nisi alias quia repellendus nostrum magnam! Ea, officia veritatis!
+    </span> -->
+</body>
+</html>
